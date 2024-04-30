@@ -18,6 +18,8 @@ pipeline {
             }
             steps {
                 sh "mvn package -DskipTests"
+                sh "ls -l target/"
+
             }
         }
     }
